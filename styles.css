@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color: #025157;
+    --secondary-color: #67B54B;
+    --base-color: #4a4a4a;
+    --complementary-color: #7e7e7e;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+body{
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--base-color);
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
