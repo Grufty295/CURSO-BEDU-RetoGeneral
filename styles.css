@@ -845,18 +845,18 @@ ul {
     }
     .promo {
         max-width: 540px;
-    }
-    .sect-tools .features.features__tools {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .sect-tools>.container{
+    } 
+    /* .sect-tools>.container{
         max-width: 540px;
-    }
+    } */
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 720px;
+    }
+    .sect-tools>.container{
+        max-width: 960px;
     }
     .sect-home {
         padding-top: 208px;
@@ -868,8 +868,7 @@ ul {
         text-align: center;
         padding: 120px 0;
     }
-    .sect-blocks>.container,
-    .footer>.container{
+    .sect-blocks>.container{
         max-width: 960px;
     }
     .footer-box__text {
@@ -901,6 +900,12 @@ ul {
 
 @media screen and (min-width: 1200px) {
     .container {
+        max-width: 1340px;
+    }
+    .header>.container,
+    .sect-tools>.container,
+    .sect-blocks>.container,
+    .footer>.container{
         max-width: 1340px;
     }
     .promo {
@@ -1078,6 +1083,9 @@ ul {
     .navbar {
         padding: 0;
     }
+    .main-menus {
+        top: 55px;
+    }
     .sect-home {
         padding-top: 80px;
     }
@@ -1118,9 +1126,22 @@ ul {
     .--ecommerce{
         background-size: auto 100%;
     }
+    .footer-logo{
+        margin-right: 100%;
+    }
+}
+
+@media screen and (max-width: 964px){
+    .sect-tools .features.features__tools {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .--blog>img{
+        height: 45px;
+    }
 }
 
 @media screen and (max-width: 865px){
+
     .footer-content__subscribe>form>input{
         padding-right: 0;
     }
@@ -1133,6 +1154,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+    .sect-tools>.container{
+        max-width: 720px;
+    }
     .burguer-menu>.nav-link{
         font-size: 14px;
     }
@@ -1183,9 +1207,9 @@ ul {
     }
 }
 
-@media screen and (max-width: 630px){
-    .home-title{
-        font-size: 30px;
+@media screen and (max-width: 640px){
+    .sect-tools>.container{
+        max-width: 540px;
     }
     .title,.sect-tools .title{
         font-size: 28px;
@@ -1201,7 +1225,7 @@ ul {
         min-width: 100%;
     }
     .footer-logo{
-        margin: 0;
+        margin: 0 50%;
     }
     .footer-media__copyright{
         margin: auto;
@@ -1209,6 +1233,9 @@ ul {
 }
 
 @media screen and (max-width: 580px){
+    .home-title{
+        font-size: 30px;
+    }
     .footer-content{
         text-align: center;
     }
